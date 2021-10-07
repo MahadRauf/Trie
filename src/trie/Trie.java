@@ -87,7 +87,6 @@ public class Trie {
 				Indexes indxS = new Indexes((short)i, (short)(hiEq+1), (short)(l-1));
 				prev.firstChild.sibling = new TrieNode(indxS,null, null);
 			}
-			// might not be changing evrything that needs to be changed back here
 			prev = root.firstChild;
 			curr = prev;
 			hiEq = -1;
